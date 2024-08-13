@@ -7,6 +7,9 @@ Plug 'preservim/nerdtree'
 " Autoclose plugin for quotes, brackets, etc.
 Plug 'Townk/vim-autoclose'
 
+" Theme plugin
+Plug 'ericbn/vim-solarized'
+
 call plug#end()
 
 " Key mappings
@@ -21,6 +24,8 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-" Classic color palette
-colorscheme desert
-
+" Setting up theme
+syntax enable
+set background=dark
+colorscheme solarized
+set termguicolors

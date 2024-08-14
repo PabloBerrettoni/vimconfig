@@ -1,6 +1,9 @@
 " Plugin Manager: vim-plug
 call plug#begin('~/.vim/plugged')
 
+" Tabnine
+Plug 'itchyny/lightline.vim'
+
 " File Explorer Plugin
 Plug 'preservim/nerdtree'
 
@@ -29,3 +32,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 set termguicolors
+
+" Lightline settings
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }

@@ -7,6 +7,13 @@ Plug 'itchyny/lightline.vim'
 " File Explorer Plugin
 Plug 'preservim/nerdtree'
 
+" NERDTree settings
+" Show hidden files
+let NERDTreeShowHidden = 1
+
+" Close NERDTree when opening a file
+let NERDTreeQuitOnOpen = 1
+
 " Autoclose plugin for quotes, brackets, etc.
 Plug 'Townk/vim-autoclose'
 

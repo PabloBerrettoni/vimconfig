@@ -18,7 +18,12 @@ let NERDTreeQuitOnOpen = 1
 Plug 'Townk/vim-autoclose'
 
 " Theme plugin
-Plug 'ericbn/vim-solarized'
+Plug 'crusoexia/vim-monokai'
+
+" Syntax highlighting plugins
+Plug 'vim-python/python-syntax'  " Enhanced Python syntax
+Plug 'stephpy/vim-yaml'         " YAML syntax
+Plug 'hashivim/vim-terraform'   " Terraform syntax
 
 call plug#end()
 
@@ -37,11 +42,21 @@ set autoindent
 " Setting up theme
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme monokai
 set termguicolors
 
 " Lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'wombat',
       \ }
+
+" Enhanced Python syntax highlighting
+let g:python_highlight_all = 1
+
+" YAML settings
+let g:yaml_schema = 'auto'
+
+" Terraform settings
+let g:terraform_align = 1
+let g:terraform_fmt_on_save = 1
